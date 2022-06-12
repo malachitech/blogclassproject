@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Food Audible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <nav class="nav">
+            <div class="logo">
+                <h1><i class="fa-brands fa-audible uppercase"></i>  Food Audible</h1>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="uppercase">Home</a>
+                <a href="login.html" class="uppercase">Log In</a>
+                <a href="about.html" class="uppercase">About</a>
+                <a href="recipesandtutorial.html" class="uppercase">Recipes &AMP; Tutorials</a>
+                <a href="contact.html" class="uppercase">Contact</a>
+                <button id="nav-toggler" class="nav-toggler"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+
+        <!-- nav list on toggle -->
+        <div class="nav-links-toggle">
+            <button  id="nav-toggler-close" class="nav-toggler-close"><i class="fa-solid fa-circle-xmark"></i></button>
+            <a href="index.html" class="uppercase">Home</a>
+            <a href="login.html" class="uppercase">Log In</a>
+            <a href="about.html" class="uppercase">About</a>
+            <a href="recipesandtutorial.html" class="uppercase">Recipes &AMP; Tutorials</a>
+            <a href="contact.html" class="uppercase">Contact</a>
+        </div>
+        <!-- nav  list on togglle close -->
+
+        <!-- login form -->
+
+        <div class="login-form">
+            
+            <div class="login-inputs">
+                <div class="logo">
+                    <h1><i class="fa-brands fa-audible uppercase"></i></h1>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="tel" name="Password" id="tel" placeholder="Password">
+
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox"><span>Keep me logged in</span>
+                </div>
+                
+                <p class="loginErrorMsg">
+                    *Invalid email or phone number
+                </p>
+
+                <button id="submit" class="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                <p class="login-inputs-icons">
+                    Or log In using: 
+                    <i class="blue fa-brands fa-facebook-f"></i>
+                    <i class="deepblue fa-brands fa-twitter"></i>
+                    <i class="red fa-brands fa-google"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+<!-- <script src="main.js"></script> -->
+<script src="https://kit.fontawesome.com/e826019b0e.js" crossorigin="anonymous"></script>
+</html>

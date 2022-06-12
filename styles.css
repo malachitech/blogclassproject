@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+/* global styles */
+body{ 
+    background-color: var(--grey); 
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;    
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --blue: rgba(158, 158, 235, 0.356);
+    --darkBlue: rgb(35, 35, 128);
+    --lightred: rgba(240, 163, 119, 0.623);
+    --red : rgba(253, 76, 76, 0.589);
+    --grey: rgba(209, 206, 206, 0.432);
+    --lightBlue: rgba(99, 201, 241, 0.178);
+}
+#blue{
+    color: var(--blue);
+}
+#lightred{
+    color: var(--lightred);
+}
+#deepblue{
+    color: var(--darkBlue);
+}
+#red{
+    color: var(--red);
+}
+
+.container{
+    padding-top: 20px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+/* global styles ends*/
+
+/* landing page styles */
+.landing-page-header{
+    margin-top: -10px;
+    background-color: var(--grey);
+    padding-bottom: 50px;
+    height: 50vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(imgs/landingpagebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    color: var(--white);
+}
+.introduction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.intro-links a{
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 30px;
+    margin-right: 10px;
+    transition: 0.5s ease-in;
+}
+.intro-links .join-community{
+    background-color: rgb(76, 119, 76);
+    color: var(--white);
+}
+.intro-links a:hover{
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.landing-page-main{
+    margin: 0 100px;
+}
+
+.landing-page-main .landingpage-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.landing-page-main .landingpage-card{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto 5px;
+    width: 70%;
+   
+}
+.landing-page-main .card-img img{
+    height: 100%;
+    margin-right: 30px;
+    width: 240px;
+}
+.landingpagetitle{
+    text-align: center;
+}
+.post-body{
+    margin-bottom: 20px;
+}
+.cards .controls i {
+    color: var(--black);
+}
+.controls i {
+    color: var(--white);
+}
+.topUl .fa-star{
+    color: red;
+}
+
+/* about part */
+
+.about{
+    background-color: var(--lightBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-img img{
+    height: 70vh;
+    margin-right: 30px;
+}
+.aboutUs .aboutText{
+    line-height: 1.6em;
+}
+/* landing page styles ends */
+
+aside{
+    float: left;
+    padding: 0 5px;
+    height: 100vh;
+    position: fixed;
+    width: 15vw;
+    margin-right: 15px;
+}
+
+#addBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addBtn{
+    padding: 7px 30px;
+    background-color: var(--blue);
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.336);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+#addBtn:hover{
+    background-color: var(--grey);
+    letter-spacing: 4px;
+    padding: 7px 35px;
+}
+
+ul, ul li{
+    margin: 30px 0;
+    padding-left: 0;
+}
+
+ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul a li{
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: var(--lightBlue);
+}
+
+.firstHr{width: 30%; text-align: center;}
+.main{
+   margin-left: 20vw;
+}
+
+/* cards styling */
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    width: 75vw;
+}
+
+.card{
+    flex: 1;
+    min-width: 15vw;
+    background-color: var(--white);
+    padding: 20px;
+    border-bottom: 7px solid var(--blue);
+    transition: 0.3s ease-in;
+    margin: 15px;
+    color: var(--darkBlue);
+    cursor: pointer;
+}
+.card:hover{
+    border-bottom: 7px solid var(--lightBlue);
+    background-color: var(--blue);
+}
+
+.title h3{
+    margin: 0;
+}
+
+.date time{
+    color: var(--lightred);
+    font-weight: bold;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.addToFavorite{
+    color: red;
+}
+
+.rightcardcontrol i{
+    margin-right: 10px;
+}
+
+.cardToggleUl{
+    display: none;
+}
+.opencardToggleUl{
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    right: 50px;
+    width: 100px;
+    background-color: var(--grey);
+}
+
+.opencardToggleUl li{
+    margin: 0;
+}
+
+/* user page modal styles */
+
+
+.myModal{
+    display: none;
+}
+.myModalOpened{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--black);
+    bottom: 150px;
+    right: 200px;
+}
+.modal-close{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    
+}
+.modal-close button{
+    font-size: 1.6em;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in;
+    color: var(--white);
+    cursor: pointer;
+}
+.modal-close button:hover{
+    color: var(--red);
+}
+.modal-input{
+    position: relative;   
+}
+
+.modal-input >*{
+    width: 96%;
+    margin: 5px auto;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+
+/* .modal-input>input{
+    width: 89.7%;
+} */
+.modal-togglers{
+    text-align: right;
+   
+}
+.modal-togglers > button{
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    color: var(--white);
+}
+.modal-togglers #discard{
+    background-color: var(--red);
+}
+.modal-togglers #discard:hover, .modal-togglers #addPost:hover{
+    background-color: var(--grey);
+}
+.modal-togglers #addPost{
+    background-color: var(--blue);
+}
+/* user page modal styles ends */
+
+
+/* login styles */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nav-links a{
+    margin-right: 10px;
+    color: var(--black);
+    text-decoration: none;
+    /* background-color: var(--blue); */
+    padding: 10px 20px;
+    font-size: 0.9em;
+    transition: 0.5s ease-in;
+    color: var(--white);
+}
+
+.nav-links a:hover{
+    background-color: var(--grey);
+    letter-spacing: 2px;
+}
+.nav-toggler{
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    color: var(--white);
+}
+.nav-toggler:hover{
+    color: grey;
+}
+.nav-links-toggle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: black;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+.nav-links-toggle.open{
+    transform: translateY(0);
+    z-index: 99;
+}
+.nav-links-toggle .nav-toggler-close{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background: none;
+    font-size: 2em;
+    color: var(--white);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.nav-links-toggle .nav-toggler-close:hover{
+    color: var(--grey);
+}
+.nav-links-toggle a{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: var(--white);
+    transition: 0.5s ease-in-out;
+    font-size: 0.9em;
+}
+.nav-links-toggle a:hover{
+    letter-spacing: 2px;
+}
+
+/*  login form styles */
+.login-body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(imgs/loginbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    color: var(--white);
+}
+.login-form{
+    text-align: center;
+    width: 30%;
+    height: 80vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: var(--white);
+}
+
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.login-inputs .logo{
+    margin-top: 0;
+    font-size: 1.3em;
+}
+.login-inputs>*{
+    margin-bottom: 20px;
+}
+.login-inputs>input{
+    width: 70%;
+    padding: 10px;
+    margin-top: 6px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+}
+
+.loginErrorMsg{
+    color: red;
+    display: none;
+}
+
+.login-inputs .submit{
+    font-size: 2em;
+    background: none;
+    color: white;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.login-inputs .submit:hover{
+    background-color: var(--grey);
+    color: white;
+}
+.login-inputs-icons{
+    cursor: pointer;
+}
+.blue{
+    color: var(--blue);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.blue:hover{
+    color: var(--grey);
+}
+.deepblue{
+    color: var(--darkBlue);
+    margin-right: 10px;
+}
+.deepblue:hover{
+    color: var(--grey);
+}
+.red{
+    color: var(--red);
+    margin-right: 10px;
+}
+.red:hover{
+    color: var(--grey);
+}
+
+/* footer styles */
+
+footer{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(imgs/foodaudibleimg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    color: var(--white);
+}
+footer .liscence{
+    text-align: center;
+}
+
+/* screen ressponsiveness for 1200px screen width */
+@media(max-width: 1200px){
+    .nav-links a{
+        margin-right: 7px;
+        color: var(--black);
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+}
+/* screen ressponsiveness for 1200px screen width end */
+
+
+
+/* screen ressponsiveness for 1000px screen width */
+
+@media(max-width: 1000px){
+    .nav-links a{
+        display: none;
+    }
+    .nav-toggler{
+        display: block;
+    }
+
+    /* login form responsive style */
+    .login-form{
+        width: 80%;
+    }
+    
+    .login-inputs>input{
+        width: 80%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .login-inputs .logo{
+        font-size: 1em;
+    }
+    .login-inputs .submit{
+        font-size: 1.6em;
+        padding: 10px 30px;
+    }
+    
+
+    /* user page start */
+
+    #addBtn{
+        padding: 7px 10px;
+    }
+
+    #addBtn:hover{
+        letter-spacing: 2px;
+        padding: 7px 15px;
+    }
+
+
+    .firstHr{width: 50%;}
+    .main{
+    margin-left: 19vw;
+    }
+
+    /* cards styling */
+    .cards{ 
+        width: 80vw;
+    }
+
+    .card{
+        flex: 1;
+        width: 50vw;
+    }
+
+    /* user page modal styles */
+    
+    .myModalOpened{
+        width: 60%;
+        right: 40px;
+        top: 40px;
+        height: 50vh;
+    }
+
+    .modal-close button{
+        font-size: 1em;
+    }
+
+    .modal-input >*{
+        width: 90%;
+    }
+    
+    /* user page modal styles ends */
+
+
+    /* landing page styles */
+
+    
+    .landing-page-main{
+        margin: 10px;
+    }
+    
+    .landing-page-main .landingpage-cards{
+        flex-direction: column;
+        width: 100%;
+    }
+    .landing-page-main .landingpage-card{
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px 0;
+        width: 88%;
+       
+    }
+    .landing-page-main .card-img img{
+        height: 100%;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    /* about part */
+    
+    .about{
+        
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    .about-img img{
+        height: 70vh;
+        margin-right: 0;
+        margin: 5px;
+    }
+    .aboutUs .aboutText{
+        line-height: 1.4em;
+    }
+
+}
+/* screen ressponsiveness for 1000px screen width ends*/
+
+/* screen ressponsiveness for 700px screen width*/
+
+@media(max-width: 700px){
+
+
+/* cards styling */
+.cards{ 
+    width: 80vw;
+}
+
+.card{
+    flex: none;
+    width: 80%;
+}
+
+.tags{
+    display: none;
+}
+
+}
+/* screen ressponsiveness for 700px screen width*/

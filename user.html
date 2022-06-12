@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="user-nav">
+            <div id="addBtnContainer">
+                <button id="addBtn" class="openModal">Add</button>
+            </div>
+
+            <div class="ulClass">
+                <ul class="topUl">
+                    <a href="#"><li><i class="fa-solid fa-pen-to-square"></i><span class="tags allNotes"> All Notes</span></li></a>
+                    <a href="#"><li><i class="fa-solid fa-star"></i><span class="tags favourites"> Favourites</span></li></a>
+                </ul>
+                
+                <hr class="firstHr">
+    
+                <ul class="bottomUl">
+                    <a href="#"><li><i class="fa-solid fa-tags"></i> <span class="tags sidebar"> Tags</span></li></a>
+                    <a href="#"><li><i class="fa-solid fa-user" id="blue"></i> <span class="tags sidebar"> Personal</span> </li></a>
+                    <a href="#"><li><i class="fa-solid fa-building" id="lightred"></i> <span class="tags sidebar"> Work</span></li></a>
+                    <a href="#"><li><i class="fa-solid fa-users" id="deepblue"></i> <span class="tags sidebar"> Social</span></li></a>
+                    <a href="#"><li><i class="fa-solid fa-circle-exclamation" id="red"></i> <span class="tags sidebar"> Important</span></li></a>   
+                </ul>
+            </div>
+        </aside>
+
+        
+
+        <div class="main">
+            <div id="myModal" class="myModal">
+                <div class="modal-close">
+                    <button id="nav-toggler-close"  onclick="clearModalValues()" class="nav-toggler-close"><i class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+                <div class="modal-input">
+                    <div class="modal-input">
+                        <input type="text" placeholder="Title" id="modal-title">
+                        <input type="date" id="date" name="date">
+                        <textarea name="textarea" placeholder="Your Post" id="textarea" cols="50" rows="10"></textarea>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="modal-togglers">
+                    <button id="discard" onclick="clearModalValues()"><i class="fa-solid fa-trash"></i> Discard</button>
+                    <button id="addPost" onclick="modalContent()">Add</button>
+                </div>
+                
+            </div>
+            <div class="cards">
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</html>
+</body>
+<script src="https://kit.fontawesome.com/e826019b0e.js" crossorigin="anonymous"></script>
